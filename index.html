@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веселый сайт с мини-играми</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на наш веселый сайт!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#games">Игры</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Главная</h2>
+        <p>Здесь вы найдете увлекательные мини-игры и красивые картинки.</p>
+    </section>
+    <section id="games">
+        <h2>Игры</h2>
+        <div class="game">
+            <h3>Игра 1: Угадай число</h3>
+            <button onclick="startGuessingGame()">Начать игру</button>
+            <div id="guessing-game" style="display:none;">
+                <p>Угадайте число от 1 до 100:</p>
+                <input type="number" id="guess" min="1" max="100">
+                <button onclick="checkGuess()">Проверить</button>
+                <p id="result"></p>
+            </div>
+        </div>
+        <!-- Добавьте больше игр здесь -->
+    </section>
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Картинка 1">
+            <img src="image2.jpg" alt="Картинка 2">
+            <img src="image3.jpg" alt="Картинка 3">
+            <!-- Добавьте больше картинок здесь -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами по адресу <a href="mailto:info@example.com">info@example.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Веселый сайт. Все права защищены.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
